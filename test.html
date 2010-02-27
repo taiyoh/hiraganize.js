@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" id="sixapart-standard">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="ja" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>Hiraganize test</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="http://github.com/jquery/qunit/raw/master/qunit/qunit.css" type="text/css" media="screen">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://github.com/jquery/qunit/raw/master/qunit/qunit.js"></script>
+<script type="text/javascript" charset="UTF-8" src="hiraganize.js"></script>
+</head>
+<body>
+
+  <h1 id="qunit-header">QUnit Test Suite</h1>
+  <h2 id="qunit-banner"></h2>
+  <div id="qunit-testrunner-toolbar"></div>
+  <h2 id="qunit-userAgent"></h2>
+  <ol id="qunit-tests"></ol>
+
+<script type="text/javascript">
+//<!CDATA[
+test("aaaaa", function() {
+  equals( "あああああ", Hiraganize.walk('aaaaa'), "あああああ" );
+});
+test("aka", function() {
+  equals( "あか", Hiraganize.walk('aka'), "あか" );
+});
+test("kasatate", function() {
+  equals( "かさたて", Hiraganize.walk('kasatate'), "かさたて" );
+});
+test("kyameru", function() {
+  equals( "きゃめる", Hiraganize.walk('kyameru'), "きゃめる" );
+});
+test("aru,haretahinokoto.", function() {
+  equals( "ある、はれたひのこと。", Hiraganize.walk('aru,haretahinokoto.'), "ある、はれたひのこと。" );
+});
+test("soreha totemo tsuyoi", function() {
+  equals( "それは とても つよい", Hiraganize.walk('soreha totemo tsuyoi'), "それは とても つよい" );
+});
+test("darekairu?", function() {
+  equals( "だれかいる?", Hiraganize.walk('darekairu?'), "だれかいる?" );
+});
+test("qawsedrftgyhujikol!@#$^&*()_+", function() {
+  equals( "くぁえうじこ!@#$^&*()_+", Hiraganize.walk('qawsedrftgyhujikol!@#$^&*()_+'), "くぁえうじこ!@#$^&*()_+" );
+});
+test("attamaii!", function() {
+  equals( "あったまいい!", Hiraganize.walk('attamaii!'), "あったまいい!" );
+});
+test("usshissi", function() {
+  equals( "うっしっし", Hiraganize.walk('usshissi'), "うっしっし" );
+});
+//]]>
+</script>
+
+</div>
+</body>
+</html>
