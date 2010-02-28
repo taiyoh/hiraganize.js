@@ -446,10 +446,14 @@ Hiraganize.map = {
 Hiraganize.pool = {
 	text : [],
 	list : [],
+	step : new Object,
 	add : function(step) {
 		var raw = step.getPooled();
-		if (raw != ' ') { Hiraganize.pool.list.push(raw); }
+		if (typeof step.map == 'string') {
+			Hiraganize.pool.list.push(raw);
+		}
 		Hiraganize.pool.text.push(step.getMapped());
+		Hiraganize.pool.step = step;
 	},
 	tagify : function(prefix, suffix, attr) {
 		return Hiraganize.tagify(Hiraganize.pool.list, prefix, suffix, attr);
@@ -460,7 +464,16 @@ Hiraganize.pool = {
 			var w = Hiraganize.pool.text[i];
 			if (typeof w == 'string') txt.push(w);
 		}
+		if (txt[txt.length - 1] == ' ') {
+			txt.pop();
+		}
 		return txt.join('');
+	},
+	getStepTerminated : function() {
+		if (!Hiraganize.pool.step.isTerminated) {
+			return true;
+		}
+		return Hiraganize.pool.step.isTerminated();
 	}
 };
 
@@ -507,12 +520,7 @@ Hiraganize.Step.prototype =	{
 	},
 	isTerminated : function(last) {
 		if (last && typeof this.map == 'object') {
-			if (this.pool[0] == 'n') {
-				this.map = 'ん';
-			}
-			else {
-				Hiraganize.pool.text.push(this.pool.join(''));
-			}
+			Hiraganize.pool.text.push(this.pool.join(''));
 			this.status = false;
 		}
 		return !this.status || typeof this.map != 'object';
@@ -531,6 +539,7 @@ Hiraganize.Step.prototype =	{
 Hiraganize.init = function() {
 	Hiraganize.pool.text = [];
 	Hiraganize.pool.list = [];
+	Hiraganize.pool.step = new Object;
 };
 
 Hiraganize.walk = function(text) {
