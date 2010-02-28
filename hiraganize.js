@@ -51,7 +51,9 @@ Hiraganize.map = {
 		'o' : 'こ',
 		'y' : {
 			'a' : 'きゃ',
+			'i' : 'きぃ',
 			'u' : 'きゅ',
+			'e' : 'きぇ',
 			'o' : 'きょ'
 		}
 	},
@@ -63,7 +65,9 @@ Hiraganize.map = {
 		'o' : 'そ',
 		'y' : {
 			'a' : 'しゃ',
+			'i' : 'しぃ',
 			'u' : 'しゅ',
+			'e' : 'しぇ',
 			'o' : 'しょ'
 		},
 		'h' : {
@@ -72,6 +76,13 @@ Hiraganize.map = {
 			'u' : 'しゅ',
 			'e' : 'しぇ',
 			'o' : 'しょ'
+		},
+		'w' : {
+			'a' : 'すぁ',
+			'i' : 'すぃ',
+			'u' : 'すぅ',
+			'e' : 'すぇ',
+			'o' : 'すぉ'
 		}
 	},
 	't'	: {
@@ -82,15 +93,35 @@ Hiraganize.map = {
 		'o' : 'と',
 		'y' : {
 			'a' : 'ちゃ',
+			'i' : 'ちぃ',
 			'u' : 'ちゅ',
+			'e' : 'ちぇ',
 			'o' : 'ちょ'
 		},
 		's' : {
-			'u' : 'つ'
+			'a' : 'つぁ',
+			'i' : 'つぃ',
+			'u' : 'つ',
+			'e' : 'つぇ',
+			'o' : 'つぉ'
+		},
+		'h' : {
+			'a' : 'てゃ',
+			'i' : 'てぃ',
+			'u' : 'てゅ',
+			'e' : 'てぇ',
+			'o' : 'てょ'
+		},
+		'w' : {
+			'a' : 'とぁ',
+			'i' : 'とぃ',
+			'u' : 'とぅ',
+			'e' : 'とぇ',
+			'o' : 'とぉ'
 		}
 	},
 	'c' : {
-		'a' : 'きゃ',
+		'a' : 'か',
 		'i' : 'し',
 		'u' : 'く',
 		'e' : 'せ',
@@ -104,7 +135,9 @@ Hiraganize.map = {
 		},
 		'y' : {
 			'a' : 'ちゃ',
+			'i' : 'ちぃ',
 			'u' : 'ちゅ',
+			'e' : 'ちぇ',
 			'o' : 'ちょ'
 		}
 	},
@@ -115,9 +148,12 @@ Hiraganize.map = {
 		'e' : 'ね',
 		'o' : 'の',
 		'n' : 'ん',
+		"'" : 'ん',
 		'y' : {
 			'a' : 'にゃ',
+			'i' : 'にぃ',
 			'u' : 'にゅ',
+			'e' : 'にぇ',
 			'o' : 'にょ'
 		}
 
@@ -130,7 +166,9 @@ Hiraganize.map = {
 		'o' : 'ほ',
 		'y' : {
 			'a' : 'ひゃ',
+			'i' : 'ひぃ',
 			'u' : 'ひゅ',
+			'e' : 'ひぇ',
 			'o' : 'ひょ'
 		}
 
@@ -143,16 +181,18 @@ Hiraganize.map = {
 		'o' : 'も',
 		'y' : {
 			'a' : 'みゃ',
+			'i' : 'みぃ',
 			'u' : 'みゅ',
+			'e' : 'みぇ',
 			'o' : 'みょ'
 		}
 
 	},
 	'y'	: {
 		'a' : 'や',
-		'i' : 'ゐ',
+		'i' : 'い',
 		'u' : 'ゆ',
-		'e' : 'ゑ',
+		'e' : 'いぇ',
 		'o' : 'よ'
 	},
 	'r'	: {
@@ -163,7 +203,9 @@ Hiraganize.map = {
 		'o' : 'ろ',
 		'y' : {
 			'a' : 'りゃ',
+			'i' : 'りぃ',
 			'u' : 'りゅ',
+			'e' : 'りぇ',
 			'o' : 'りょ'
 		}
 
@@ -171,8 +213,16 @@ Hiraganize.map = {
 	'w'	: {
 		'a' : 'わ',
 		'i' : 'うぃ',
+		'u' : 'う',
 		'e' : 'うぇ',
-		'o' : 'を'
+		'o' : 'を',
+		'h' : {
+			'a' : 'うぁ',
+			'i' : 'うぃ',
+			'u' : 'う',
+			'e' : 'うぇ',
+			'o' : 'うぉ'
+		}
 	},
 	'g'	: {
 		'a' : 'が',
@@ -182,8 +232,17 @@ Hiraganize.map = {
 		'o' : 'ご',
 		'y' : {
 			'a' : 'ぎゃ',
+			'i' : 'ぎぃ',
 			'u' : 'ぎゅ',
+			'e' : 'ぎぇ',
 			'o' : 'ぎょ'
+		},
+		'w' : {
+			'a' : 'ぐぁ',
+			'i' : 'ぐぃ',
+			'u' : 'ぐぅ',
+			'e' : 'ぐぇ',
+			'o' : 'ぐぉ'
 		}
 
 	},
@@ -195,7 +254,9 @@ Hiraganize.map = {
 		'o' : 'ぞ',
 		'y' : {
 			'a' : 'じゃ',
+			'i' : 'じぃ',
 			'u' : 'じゅ',
+			'e' : 'じぇ',
 			'o' : 'じょ'
 		}
 
@@ -205,7 +266,14 @@ Hiraganize.map = {
 		'i' : 'じ',
 		'u' : 'じゅ',
 		'e' : 'じぇ',
-		'o' : 'じょ'
+		'o' : 'じょ',
+		'y' : {
+			'a' : 'じゃ',
+			'i' : 'じぃ',
+			'u' : 'じゅ',
+			'e' : 'じぇ',
+			'o' : 'じょ'
+		}
 	},
 	'd'	: {
 		'a' : 'だ',
@@ -215,8 +283,24 @@ Hiraganize.map = {
 		'o' : 'ど',
 		'y' : {
 			'a' : 'ぢゃ',
+			'i' : 'ぢぃ',
 			'u' : 'ぢゅ',
+			'e' : 'ぢぇ',
 			'o' : 'ぢょ'
+		},
+		'h' : {
+			'a' : 'でゃ',
+			'i' : 'でぃ',
+			'u' : 'でゅ',
+			'e' : 'でぇ',
+			'o' : 'でょ'
+		},
+		'w' : {
+			'a' : 'どぁ',
+			'i' : 'どぃ',
+			'u' : 'どぅ',
+			'e' : 'どぇ',
+			'o' : 'どぉ'
 		}
 	},
 	'b'	: {
@@ -227,7 +311,9 @@ Hiraganize.map = {
 		'o' : 'ぼ',
 		'y' : {
 			'a' : 'びゃ',
+			'i' : 'びぃ',
 			'u' : 'びゅ',
+			'e' : 'びぇ',
 			'o' : 'びょ'
 		}
 	},
@@ -239,20 +325,35 @@ Hiraganize.map = {
 		'o' : 'ぽ',
 		'y' : {
 			'a' : 'ぴゃ',
+			'i' : 'ぴぃ',
 			'u' : 'ぴゅ',
+			'e' : 'ぴぇ',
 			'o' : 'ぴょ'
 		}
 	},
 	'l'	: {
-		'a' : 'ら',
-		'i' : 'り',
-		'u' : 'る',
-		'e' : 'れ',
-		'o' : 'ろ',
+		'a' : 'ぁ',
+		'i' : 'ぃ',
+		'u' : 'ぅ',
+		'e' : 'ぇ',
+		'o' : 'ぉ',
+		'w' : 'ゎ',
 		'y' : {
-			'a' : 'りゃ',
-			'u' : 'りゅ',
-			'o' : 'りょ'
+			'a' : 'ゃ',
+			'i' : 'ぃ',
+			'u' : 'ゅ',
+			'e' : 'ぇ',
+			'o' : 'ょ'
+		},
+		't' : {
+			'u' : 'っ',
+			's' : {
+				'u' : 'っ'
+			}
+		},
+		'k' : {
+			'a' : 'ヵ',
+			'e' : 'ヶ'
 		}
 
 	},
@@ -261,22 +362,82 @@ Hiraganize.map = {
 		'i' : 'ふぃ',
 		'u' : 'ふ',
 		'e' : 'ふぇ',
-		'o' : 'ふぉ'
+		'o' : 'ふぉ',
+		'y' : {
+			'a' : 'ふゃ',
+			'i' : 'ふぃ',
+			'u' : 'ふゅ',
+			'e' : 'ふぇ',
+			'o' : 'ふょ'
+		},
+		'w' : {
+			'a' : 'ふぁ',
+			'i' : 'ふぃ',
+			'u' : 'ふぅ',
+			'e' : 'ふぇ',
+			'o' : 'ふぉ'
+		}
 	},
 	'v'	: {
-		'a' : 'ば',
-		'i' : 'び',
-		'u' : 'ぶ',
-		'e' : 'べ',
-		'o' : 'ぼ'
+		'a' : 'ヴぁ',
+		'i' : 'ヴぃ',
+		'u' : 'ヴ',
+		'e' : 'ヴぇ',
+		'o' : 'ヴぉ',
+		'y' : {
+			'a' : 'ヴゃ',
+			'i' : 'ヴぃ',
+			'u' : 'ヴゅ',
+			'e' : 'ヴぇ',
+			'o' : 'ヴょ'
+		}
 	},
 	'q'	: {
 		'a' : 'くぁ',
 		'i' : 'くぃ',
 		'u' : 'く',
 		'e' : 'くぇ',
-		'o' : 'くぉ'
+		'o' : 'くぉ',
+		'y' : {
+			'a' : 'くゃ',
+			'i' : 'くぃ',
+			'u' : 'くゅ',
+			'e' : 'くぇ',
+			'o' : 'くょ'
+		},
+		'w' : {
+			'a' : 'くぁ',
+			'i' : 'くぃ',
+			'u' : 'くぅ',
+			'e' : 'くぇ',
+			'o' : 'くぉ'
+		}
 	},
+	'x'	: {
+		'a' : 'ぁ',
+		'i' : 'ぃ',
+		'u' : 'ぅ',
+		'e' : 'ぇ',
+		'o' : 'ぉ',
+		'n' : 'ん',
+		'w' : 'ゎ',
+		't' : {
+			'u' : 'っ'
+		},
+		'y' : {
+			'a' : 'ゃ',
+			'i' : 'ぃ',
+			'u' : 'ゅ',
+			'e' : 'ぇ',
+			'o' : 'ょ'
+		},
+		'k' : {
+			'a' : 'ヵ',
+			'e' : 'ヶ'
+		}
+
+	},
+	'-' : 'ー',
 	',' : '、',
 	'.' : '。',
 	' ' : ' '
@@ -314,8 +475,13 @@ Hiraganize.Step.prototype =	{
 		if (this.map[c]) {
 			this.map = this.map[c];
 			this.pool.push(String(c));
+			this.status = (typeof this.map != 'string');
 		}
-		else if (/[\[`~!@#$%^&*()_\-+={}\\'";:/?><\]]/.test(c)) {
+		else if (/[\[`~!@#$%^&*()_\-+={}\\'";:/?><1234567890\]]/.test(c)) {
+			if (this.pool[0] == 'n') {
+				Hiraganize.pool.text.push('ん');
+				Hiraganize.pool.list.push('nn');
+			}
 			this.pool.push(c);
 			this.map = c;
 			this.status = false;
@@ -324,11 +490,31 @@ Hiraganize.Step.prototype =	{
 			Hiraganize.pool.text.push('っ');
 			Hiraganize.pool.list.push('tt');
 		}
+		else if (!/[aiueoyn]/.test(c) && this.pool[this.pool.length - 1] == 'n') {
+			Hiraganize.pool.text.push('ん');
+			Hiraganize.pool.list.push('nn');
+			this.map = Hiraganize.map[c];
+			this.pool.push(String(c));
+		}
+		else if (!/[aiueo]/.test(this.pool[this.pool.length - 1]) && !/[aiueo]/.test(c)) {
+			Hiraganize.pool.text.push(this.pool.pop());
+			this.map = Hiraganize.map[c];
+			this.pool.push(String(c));
+		}
 		else {
 			this.status = false;
 		}
 	},
-	isTerminated : function() {
+	isTerminated : function(last) {
+		if (last && typeof this.map == 'object') {
+			if (this.pool[0] == 'n') {
+				this.map = 'ん';
+			}
+			else {
+				Hiraganize.pool.text.push(this.pool.pop());
+			}
+			this.status = false;
+		}
 		return !this.status || typeof this.map != 'object';
 	},
 	getPooled : function() {
@@ -354,7 +540,7 @@ Hiraganize.walk = function(text) {
 	for (var i = 0, l = chars.length; i < l; i++) {
 		var c =	chars[i];
 		step.push(c.toLowerCase());
-		if (step.isTerminated()) {
+		if (step.isTerminated(i == l - 1)) {
 			Hiraganize.pool.add(step);
 			step = step.clone();
 		}

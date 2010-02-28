@@ -25,35 +25,53 @@
 <script type="text/javascript">
 //<!CDATA[
 test("aaaaa", function() {
-  equals( "あああああ", Hiraganize.walk('aaaaa'), "あああああ" );
+  equals( Hiraganize.walk('aaaaa'), "あああああ", "あああああ" );
 });
 test("aka", function() {
-  equals( "あか", Hiraganize.walk('aka'), "あか" );
+  equals( Hiraganize.walk('aka'), "あか", "あか" );
 });
 test("kasatate", function() {
-  equals( "かさたて", Hiraganize.walk('kasatate'), "かさたて" );
+  equals( Hiraganize.walk('kasatate'), "かさたて", "かさたて" );
 });
 test("kyameru", function() {
-  equals( "きゃめる", Hiraganize.walk('kyameru'), "きゃめる" );
+  equals( Hiraganize.walk('kyameru'), "きゃめる", "きゃめる" );
 });
 test("aru,haretahinokoto.", function() {
-  equals( "ある、はれたひのこと。", Hiraganize.walk('aru,haretahinokoto.'), "ある、はれたひのこと。" );
+  equals( Hiraganize.walk('aru,haretahinokoto.'), "ある、はれたひのこと。", "ある、はれたひのこと。" );
 });
 test("soreha totemo tsuyoi", function() {
-  equals( "それは とても つよい", Hiraganize.walk('soreha totemo tsuyoi'), "それは とても つよい" );
+  equals( Hiraganize.walk('soreha totemo tsuyoi'), "それは とても つよい", "それは とても つよい" );
 });
 test("darekairu?", function() {
-  equals( "だれかいる?", Hiraganize.walk('darekairu?'), "だれかいる?" );
+  equals( Hiraganize.walk('darekairu?'), "だれかいる?", "だれかいる?" );
 });
 test("qawsedrftgyhujikol!@#$^&*()_+", function() {
-  equals( "くぁえうじこ!@#$^&*()_+", Hiraganize.walk('qawsedrftgyhujikol!@#$^&*()_+'), "くぁえうじこ!@#$^&*()_+" );
+  equals( Hiraganize.walk('qawsedrftgyhujikol!@#$^&*()_+'), "くぁwせdrftyふじこ!@#$^&*()_+", "くぁwせdrftyふじこ!@#$^&*()_+" );
 });
 test("attamaii!", function() {
-  equals( "あったまいい!", Hiraganize.walk('attamaii!'), "あったまいい!" );
+  equals( Hiraganize.walk('attamaii!'), "あったまいい!", "あったまいい!" );
 });
 test("usshissi", function() {
-  equals( "うっしっし", Hiraganize.walk('usshissi'), "うっしっし" );
+  equals( Hiraganize.walk('usshissi'), "うっしっし", "うっしっし" );
 });
+test("bonsai", function() {
+  equals( Hiraganize.walk('bonsai'), "ぼんさい", "ぼんさい" );
+});
+test("donadonado-na-do-na-", function() {
+  equals( Hiraganize.walk('donadonado-na-do-na-'), "どなどなどーなーどーなー", "どなどなどーなーどーなー" );
+})
+test("keion.", function() {
+  equals( Hiraganize.walk('keion.'), "けいおん。", "けいおん。" );
+})
+test("dorakue5", function() {
+  equals( Hiraganize.walk('dorakue5'), "どらくえ5", "どらくえ5" );
+})
+test("non tan", function() {
+  equals( Hiraganize.walk('non tan'), "のん たん", "のん たん" );
+})
+test("atarur", function() {
+  equals( Hiraganize.walk('atarur'), "あたるr", "あたるr" );
+})
 //]]>
 </script>
 
