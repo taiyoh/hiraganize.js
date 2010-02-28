@@ -478,7 +478,7 @@ Hiraganize.Step.prototype =	{
 			this.status = (typeof this.map != 'string');
 		}
 		else if (/[\[`~!@#$%^&*()_\-+={}\\'";:/?><1234567890\]]/.test(c)) {
-			if (this.pool[0] == 'n') {
+			if (this.pool[this.pool.length - 1] == 'n') {
 				Hiraganize.pool.text.push('ん');
 				Hiraganize.pool.list.push('nn');
 			}
@@ -494,7 +494,7 @@ Hiraganize.Step.prototype =	{
 			Hiraganize.pool.text.push('ん');
 			Hiraganize.pool.list.push('nn');
 			this.map = Hiraganize.map[c];
-			this.pool.push(String(c));
+			this.pool = [String(c)];
 		}
 		else if (!/[aiueo]/.test(this.pool[this.pool.length - 1]) && !/[aiueo]/.test(c)) {
 			Hiraganize.pool.text.push(this.pool.pop());
@@ -511,7 +511,7 @@ Hiraganize.Step.prototype =	{
 				this.map = 'ん';
 			}
 			else {
-				Hiraganize.pool.text.push(this.pool.pop());
+				Hiraganize.pool.text.push(this.pool.join(''));
 			}
 			this.status = false;
 		}
