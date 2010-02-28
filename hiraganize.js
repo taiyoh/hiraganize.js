@@ -1,10 +1,10 @@
-/**
+/**Header::
  * Hiraganize.js
  * Copyright (c) 2010 Taiyoh TANAKA
  *
- * http://github.com/taiyoh/hiraganize/raw/master/hiraganize.js
+ * http://github.com/taiyoh/hiraganize.js/raw/master/hiraganize.js
  *
- * Version:: 0.1
+ * Version:: 0.1.1
  * License:: MIT
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
